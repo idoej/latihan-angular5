@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row" style="margin-top: 40px">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose Category...
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" [ngClass]="{'active': category == 'teh'}" [routerLink]="" (click)="changeCategory('teh')">Teh</a>
+              <a class="dropdown-item" [ngClass]="{'active': category == 'kopi'}" [routerLink]="" (click)="changeCategory('kopi')">Kopi</a>
+              <a class="dropdown-item" [routerLink]="" (click)="changeCategory('')">(reset)</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link" [routerLink]="" (click)="prevPage()">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" [routerLink]="" (click)="nextPage()">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 spacer" *ngFor="let p of products">
+          <div class="card">
+            <img class="card-img-top" src="{{ p.image }}" alt="{{ p.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ p.name }}</h5>
+              <p class="card-text">{{ p.desc }}</p>
+              <a  [routerLink]="" (click)="addToCart(p.id)" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3" style="text-align: center">
+      <div style="margin-top: 20px">
+        <a href="#" class="btn btn-primary">Checkout</a>
+      </div>
+      <div style="margin-top: 20px">
+        <div class="form-control"><label>Total</label>: {{ total | rupiah }}</div>
+      </div>
+      <div style="margin-top: 20px">
+        <div style="margin-top: 10px; border: 1px solid #55aaff; border-radius: 5px" *ngFor="let pc of cart">
+          <div style="width: 100%">{{ pc.product.name }}</div>
+          <div style="width: 100%">{{ pc.product.price | rupiah }} x {{ pc.amount }} <span style="float: right">{{ pc.total | rupiah}}</span></div>
+          <div style="width: 100%">
+            <span><a [routerLink]="" (click)="remove(pc.product.id)" class="btn btn-danger">Remove</a> </span> &nbsp;&nbsp;
+            <span><a [routerLink]="" (click)="decrease(pc.product.id)" class="btn btn-danger">-</a> </span>&nbsp;&nbsp;
+            <span><a [routerLink]="" (click)="increase(pc.product.id)" class="btn btn-danger">+</a> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

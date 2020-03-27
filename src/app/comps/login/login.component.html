@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Login</h2>
+
+      <form action="" (ngSubmit)="login()">
+        <div class="help-block" *ngIf="loginError">
+          <div class="form-text text-danger">
+            Login failed
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" [(ngModel)]="username" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" [(ngModel)]="password" class="form-control" name="password">
+        </div>
+
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

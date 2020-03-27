@@ -1,0 +1,23 @@
+{
+  "users": [
+    {"id": 1,"username": "user1", "password": "password1"},
+    {"id": 2,"username": "user2", "password": "password2"},
+    {"id": 3,"username": "user3", "password": "password3"}
+  ],
+  "products": [
+    {"id": "1", "name": "Teh 1", "desc": "Ini teh enak 1", "price": 10000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+1"},
+    {"id": "2", "name": "Teh 2", "desc": "Ini teh enak 2", "price": 12000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+2"},
+    {"id": "3", "name": "Teh 3", "desc": "Ini teh enak 3", "price": 14000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+3"},
+    {"id": "4", "name": "Teh 4", "desc": "Ini teh enak 4", "price": 16000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+4"},
+    {"id": "5", "name": "Teh 5", "desc": "Ini teh enak 5", "price": 17000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+5"},
+    {"id": "6", "name": "Teh 6", "desc": "Ini teh enak 6", "price": 12000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+6"},
+    {"id": "7", "name": "Teh 7", "desc": "Ini teh enak 7", "price": 11000, "category": "teh", "image": "https://dummyimage.com/160x160/000/fff.png&text=Teh+7"},
+    {"id": "8", "name": "Kopi 1", "desc": "Ini kopi enak 1", "price": 20000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+1"},
+    {"id": "9", "name": "Kopi 2", "desc": "Ini kopi enak 2", "price": 22000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+2"},
+    {"id": "10", "name": "Kopi 3", "desc": "Ini kopi enak 3", "price": 24000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+3"},
+    {"id": "11", "name": "Kopi 4", "desc": "Ini kopi enak 4", "price": 26000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+4"},
+    {"id": "12", "name": "Kopi 5", "desc": "Ini kopi enak 5", "price": 27000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+5"},
+    {"id": "13", "name": "Kopi 6", "desc": "Ini kopi enak 6", "price": 22000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+6"},
+    {"id": "14", "name": "Kopi 7", "desc": "Ini kopi enak 7", "price": 21000, "category": "kopi", "image": "https://dummyimage.com/160x160/ccc/000.png&text=Kopi+7"}
+  ]
+}
